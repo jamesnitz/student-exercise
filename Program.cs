@@ -58,6 +58,18 @@ namespace StudentExercise
 
       foreach (Exercise exercise in exercisesList)
       {
+        Console.WriteLine($"-------{exercise.Name}-------");
+        foreach (Student student in studentsList)
+        {
+          foreach (Exercise singleExercise in student.Exercises)
+          {
+            if (singleExercise.Name == exercise.Name)
+            {
+              Console.WriteLine($"{student.FirstName} {student.LastName}");
+              Console.WriteLine($" ");
+            }
+          }
+        }
 
       }
 
