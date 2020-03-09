@@ -20,14 +20,14 @@ namespace StudentExercise
       Cohort cohort37 = new Cohort("Cohort 37");
       Cohort cohort38 = new Cohort("Cohort 38");
 
-      Student willy = new Student("Willy", "Metcalf", "sw3k", "Cohort 37");
-      Student audrey = new Student("Audrey", "Borgra", "audbor", "Cohort 37");
-      Student kevin = new Student("Kevin", "Kevinson", "kev.dev", "Cohort 37");
-      Student james = new Student("James", "Nitz", "nitzle", "Cohort 37");
+      Student willy = new Student("Willy", "Metcalf", "sw3k", cohort37);
+      Student audrey = new Student("Audrey", "Borgra", "audbor", cohort37);
+      Student kevin = new Student("Kevin", "Kevinson", "kev.dev", cohort37);
+      Student james = new Student("James", "Nitz", "nitzle", cohort37);
 
-      Instructor rose = new Instructor("rose", "roseington", "roseallday", "cohort 37", "fashion");
-      Instructor chortle = new Instructor("Steve", "Brownlee", "chortlehoort", "cohort 37", "dad jokes");
-      Instructor mo = new Instructor("mo", "money", "momo", "cohort 37", "making cheesecake");
+      Instructor rose = new Instructor("rose", "roseington", "roseallday", cohort37, "fashion");
+      Instructor chortle = new Instructor("Steve", "Brownlee", "chortlehoort", cohort37, "dad jokes");
+      Instructor mo = new Instructor("mo", "money", "momo", cohort37, "making cheesecake");
 
       cohort37.addStudent(willy);
       cohort37.addStudent(audrey);
@@ -70,13 +70,7 @@ namespace StudentExercise
             }
           }
         }
-
       }
-
-
-
-
-
     }
   }
 }
